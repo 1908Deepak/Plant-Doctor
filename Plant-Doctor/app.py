@@ -95,7 +95,7 @@ def _valid_image(file_bytes: bytes) -> Image.Image:
 # Sidebar navigation
 # -----------------------------------------------------------------------------
 with st.sidebar:
-    st.image("./assets/logo.svg", width=64)
+    st.image("Plant-Doctor/assets/logo.svg", width=64)
     st.title(PROJECT["name"])
     page = st.radio("Navigate", ["Detect", "Project Details", "Author"], index=0)
     st.caption(f"Version {PROJECT['version']}")
