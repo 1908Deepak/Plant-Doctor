@@ -47,7 +47,7 @@ class ModelNotLoadedError(PredictorError):
 @dataclass(frozen=True)
 class Config:
     """Configuration for model inference."""
-    model_path: Path = Path("model/plantdisease.keras")
+    model_path: Path = Path("Plant-Doctor/model/plantdisease.keras")
     labels_path: Path = Path("labels.json")
     # img_size is now optional; if None we infer from model.input_shape
     img_size: int | None = None
